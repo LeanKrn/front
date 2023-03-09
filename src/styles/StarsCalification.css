@@ -1,44 +1,39 @@
-.starsCalification{
-    display:flex;
+.starsCalification {
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 160px;
     margin-top: 40px;
 }
-.star{
-    cursor:pointer;
+
+.star {
+    cursor: pointer;
     transition: color 200ms;
 }
-input[type="radio"]{
-    display:none
+
+input[type="radio"] {
+    display: none;
+    margin-top: 20px;
 }
 
-@media screen and (max-width: 650px){
-    .starsCalification{
+.star {
+    width: 30px;
+}
 
-        margin-top: 20px;
-    }
-    .star{
-        width: 30px;
-    }
-    
-}
-@media screen and (max-width: 550px){
-    .starsCalification{
-        transform: translateX(100px);
-    }
-}
-@media screen and (max-width: 450px){
-    .starsCalification{
+
+@media screen and (max-width: 550px) {
+
+    .starsCalification {
         transform: translateX(200px);
     }
 }
 
-@media screen and (max-width: 450px){
-    .star{
+@media screen and (max-width: 450px) {
+    .star {
         width: 20px;
     }
-    .starsCalification{
+
+    .starsCalification {
         transform: translateX(6rem);
     }
 }

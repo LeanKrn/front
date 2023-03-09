@@ -65,20 +65,7 @@ export const Detail = () => {
         <div className="DataDiv">
           <h1>{Name}</h1>
           <hr />
-          <div className="TypeBrandDiv">
-              <p><b>{detail.type}</b></p>
-              <p><b>{detail.brand}</b></p>
-          </div>
-          <div className="Detalle">
-            <h2><b>Price: $ {detail.price}</b></h2>
-            <br />
-            <p>{detail.description}</p>
-            {detail.info_adicional && (<h6><b>Info Adicional:</b> {detail.info_adicional}</h6>)}
-            <p><strong>Stock:</strong> {detail.stock}</p>
-          </div>
-
-        
-            {!detail.inCart?
+          {!detail.inCart?
             <div className="ButtonDetail">
 
               <AddToCart 
@@ -93,6 +80,20 @@ export const Detail = () => {
                 {/* EL ? EVITA QUE ROMPA LA WEB DE DETAIL POST DELETE CAR POST PAYMENT */}
               </div>
               }
+          <div className="TypeBrandDiv">
+              <p><b>{detail.type}</b></p>
+              <p><b>{detail.brand}</b></p>
+          </div>
+          <div className="Detalle">
+            <h2><b>Price: $ {detail.price}</b></h2>
+            <br />
+            <p>{detail.description}</p>
+            {detail.info_adicional && (<h6><b>Info Adicional:</b> {detail.info_adicional}</h6>)}
+            <p><strong>Stock:</strong> {detail.stock}</p>
+          </div>
+
+        
+            
         
 
         </div>

@@ -219,7 +219,7 @@ const ProductExpanded = ({
               </select>
             </div>
 
-            {(input.type === "Motherboard" || input.type === "processor") && (
+            {(input.type === "Motherboard" || input.type === "Processor") && (
               <div>
                 <label className="LabelNameImg">
                   <strong>Socket</strong>
