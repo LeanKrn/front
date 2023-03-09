@@ -103,7 +103,7 @@ export function deleteUserLocalStorage() {
 
   export function postUsersGoogle(payload) { 
     return async function(dispatch){
-        const response = await axios.post(`https://back-production-148d.up.railway.app/users/google/`,payload);
+        const response = await axios.post(`https://back-production-148d.up.railway.app/users/google`,payload);
         return response;
     };
   };
