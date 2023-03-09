@@ -50,8 +50,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px; /* ajusta el valor según tus necesidades */
-    margin: 20px 0; /* esto centrará el contenedor horizontalmente */ 
+    max-width: 1200px; 
+    margin: 20px 0
 
 }
 .Galery{
@@ -137,24 +137,3 @@
     background-color: #f7a8f3;
   }
 
-
-
-  /* 
-  
-  https://www.venex.com.ar/products_images/1625487702_0413607bi.jpg
-  Auriculares gamer inalámbricos Corsair Virtuoso RGB Wireless SE espresso con luz rgb LED
-  https://http2.mlstatic.com/D_NQ_NP_2X_912771-MLA48049398762_102021-F.webp 
-  Memoria RAM Vengeance RGB Pro gamer color negro 16GB 2 Corsair CMW16GX4M2C3200C16
-  https://http2.mlstatic.com/D_NQ_NP_2X_601095-MLA53751174902_022023-F.webp
-  Funda Libro Para Tablet Samsung A7 Lite T220 Cover
-  https://http2.mlstatic.com/D_NQ_NP_2X_796880-MLA43468491094_092020-F.webp
-  ooler Cpu Id-cooling Se-902-sd Intel 1200 115x Y Amd Am4
-  https://http2.mlstatic.com/D_NQ_NP_2X_657637-MLA51822045232_102022-F.webp
-  Auriculares Gamer Redragon H220 Themis Negro Con Luz Led Roja
-  https://http2.mlstatic.com/D_NQ_NP_2X_884180-MLA42143887390_062020-F.webp
-  Notebook Acer Aspire 3 Dual Core 8gb/ssd 240 L14.01 W10
-  https://http2.mlstatic.com/D_NQ_NP_2X_676450-MLA46168520744_052021-F.webp
-  Notebook Asus Vivo Ideal Diseño Ssd 256 Teclado Ilum Win 10
-  https://http2.mlstatic.com/D_NQ_NP_2X_711390-MLA52684067237_122022-F.webp
-  Placa de video AMD PowerColor  Red Devil Radeon RX 6700 Series RX 6700 XT AXRX 6700XT 12GBD6-3DHE/OC 12GB
-  */
