@@ -9,14 +9,14 @@ export const UPDATE = 'UPDATE';
 
 // export const getCart = () => {
 //     return async function(dispatch) {
-//         const carts = await axios('https://back-production-148d.up.railway.app//cart')
+//         const carts = await axios('https://back-production-148d.up.railway.app/cart')
 //         console.log(carts)
 //         return dispatch({type: GET_CART, payload:carts.data})
 //     }
 // }
 export const getCart = () => async (dispatch) =>{
     try {
-        return await axios('https://back-production-148d.up.railway.app//cart').then(r=>
+        return await axios('https://back-production-148d.up.railway.app/cart').then(r=>
             dispatch({type: GET_CART, payload:r.data}))
     } catch (error) {
             console.log(error)
@@ -25,20 +25,20 @@ export const getCart = () => async (dispatch) =>{
 
 export const addToCart = (payload) => {
     return async function (dispatch){
-        const cart = await axios.post('https://back-production-148d.up.railway.app//cart', payload)
+        const cart = await axios.post('https://back-production-148d.up.railway.app/cart', payload)
         return dispatch({type: ADD_TO_CART, payload:cart.data})
     }
 }
 
 export const deleteOneCart = (prodId) => {
     return async function (dispatch){
-        const cart = await axios.delete(`https://back-production-148d.up.railway.app//cart/${prodId}`)
+        const cart = await axios.delete(`https://back-production-148d.up.railway.app/cart/${prodId}`)
         return dispatch({type: DELETE_ONE_CART, payload: cart.data})
     }
 }
 export const deleteAllFromCart = () => {
     return async function (dispatch){
-        const cart = await axios.delete('https://back-production-148d.up.railway.app//cart/')
+        const cart = await axios.delete('https://back-production-148d.up.railway.app/cart/')
         return dispatch({type: DELETE_ALL_FROM_CART, payload: cart.data})
     }
 }
@@ -46,7 +46,7 @@ export const deleteAllFromCart = () => {
 
 export function postCart(payload, preferenceId){
     return async function (dispatch){
-        const response = await axios.post('https://back-production-148d.up.railway.app//cart', payload);
+        const response = await axios.post('https://back-production-148d.up.railway.app/cart', payload);
         console.log(response);
         // Enviar el preferenceId como payload en la acción
         return dispatch({type: POST_CART, payload: {cart: response.data, preferenceId: preferenceId}});

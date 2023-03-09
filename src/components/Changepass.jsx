@@ -23,7 +23,7 @@ export default function ChangePass() {
 
   const envioMail = () => {
     axios
-      .post("https://back-production-148d.up.railway.app//users/changePass", {
+      .post("https://back-production-148d.up.railway.app/users/changePass", {
         email: input.email,
       })
       .then((res) => {
@@ -32,7 +32,7 @@ export default function ChangePass() {
   };
 
   const handleSubmit = () => {
-    axios.get("https://back-production-148d.up.railway.app//users").then(async (res) => {
+    axios.get("https://back-production-148d.up.railway.app/users").then(async (res) => {
       let eso = res.data.data;
       let encuentra = await eso.find((e) => e.email === input.email);
       setFall(encuentra?.id);
@@ -68,7 +68,7 @@ export default function ChangePass() {
   const changePassword = () => {
     if (input.password1.length >= 8 && input.password1 === input.password2) {
       axios
-        .put(`https://back-production-148d.up.railway.app//users/${fall}`, {
+        .put(`https://back-production-148d.up.railway.app/users/${fall}`, {
           password: input.password1,
         })
         .then((res) => {
